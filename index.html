@@ -54,6 +54,19 @@
   .pub-links { font-size: .9rem; }
   .pub-links a { margin-right: .75rem; }
   .pub-note { font-size: .9rem; color: var(--muted); }
+  .table-wrap { overflow-x: auto; }
+  table.pubtable { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  table.pubtable th {
+    text-align: left; font-size: .78rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: .05em; color: var(--muted);
+    padding: .4rem 1rem .4rem 0; border-bottom: 2px solid var(--rule);
+  }
+  table.pubtable td {
+    vertical-align: top; padding: .65rem 1rem .65rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  table.pubtable td.year, table.pubtable td.type, table.pubtable td.topic { white-space: nowrap; }
+  table.pubtable td.links a { display: inline-block; margin-right: .6rem; }
   ul.plain { padding-left: 1.2rem; margin: .5rem 0; }
   ul.plain li { margin-bottom: .4rem; }
   footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
@@ -92,132 +105,153 @@ and business analytics.
 </p>
 <p>
 I received my PhD in Operations Research from MIT, where I was advised by
-Retsef Levi and Tom Magnanti, and my MS in Industrial Engineering and BS in
-Information Systems Engineering from the Technion&ndash;Israel Institute of Technology.
+Retsef Levi and Tom Magnanti; my MS in Industrial Engineering from the
+Technion&ndash;Israel Institute of Technology, where I was advised by
+Yale Herer and Hussein Naseraldin; and my BS in Information Systems
+Engineering, also from the Technion.
 </p>
 
 <h2>Publications</h2>
-
-<h3>Interpretable machine learning &amp; analytics</h3>
-<ul class="pubs">
-  <li>
-    <span class="pub-title">Waiting-Time Prediction with Invisible Customers</span><br>
-    <span class="pub-authors">with Yoav Kerner, Ricky Roet-Green, Arik Senderovich, and Yuting Yuan</span><br>
-    <span class="pub-venue">Manufacturing &amp; Service Operations Management</span>, 2025<br>
-    <span class="pub-links"><a href="https://pubsonline.informs.org/doi/10.1287/msom.2022.0098">Journal</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3946696">SSRN</a></span>
-  </li>
-  <li>
-    <span class="pub-title">Interpretable Prediction Rules for Congestion Risk in Intensive Care Units</span><br>
-    <span class="pub-authors">with Fernanda Bravo, Cynthia Rudin, and Yuting Yuan</span><br>
-    <span class="pub-venue">Stochastic Systems</span>, 2024<br>
-    <span class="pub-links"><a href="https://pubsonline.informs.org/doi/10.1287/stsy.2022.0018">Journal</a><a href="https://ssrn.com/abstract=3384148">SSRN</a></span>
-  </li>
-  <li>
-    <span class="pub-title">Visualizing the Implicit Model Selection Tradeoff</span><br>
-    <span class="pub-authors">with Zezhen (Dawn) He</span><br>
-    <span class="pub-venue">Journal of Artificial Intelligence Research</span>, 2023 &middot; <span class="pub-note">invited for presentation at AAAI</span><br>
-    <span class="pub-links"><a href="https://www.jair.org/index.php/jair/article/view/13764">Journal</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3946701">SSRN</a></span>
-  </li>
-  <li>
-    <span class="pub-title">Globally-Consistent Rule-Based Summary-Explanations for Machine Learning Models: Application to Credit-Risk Evaluation</span><br>
-    <span class="pub-authors">with Cynthia Rudin</span><br>
-    <span class="pub-venue">Journal of Machine Learning Research</span>, 2023<br>
-    <span class="pub-links"><a href="https://jmlr.org/papers/volume24/21-0488/21-0488.pdf">Journal</a><a href="https://drive.google.com/file/d/1vh-ANol20YpVMIqEkjMlJzSUNn0gXTWZ/view?usp=sharing">Code</a></span>
-  </li>
-  <li>
-    <span class="pub-title">A Holistic Approach to Interpretability in Financial Lending: Models, Visualizations, and Summary-Explanations</span><br>
-    <span class="pub-authors">with Chaofan Chen, Kangcheng Lin, Cynthia Rudin, Sijia Wang, and Tong Wang</span><br>
-    <span class="pub-venue">Decision Support Systems</span>, 2022 &middot; <span class="pub-note">winner of the 2018 FICO Recognition Award for the explainable machine learning challenge</span><br>
-    <span class="pub-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0167923621001573">Journal</a><a href="https://arxiv.org/abs/2106.02605">arXiv</a></span>
-  </li>
-  <li>
-    <span class="pub-title">Understanding How Dimension Reduction Tools Work: An Empirical Approach to Deciphering t-SNE, UMAP, TriMAP, and PaCMAP for Data Visualization</span><br>
-    <span class="pub-authors">with Haiyang Huang, Cynthia Rudin, and Yingfan Wang</span><br>
-    <span class="pub-venue">Journal of Machine Learning Research</span>, 2021 &middot; <span class="pub-note">winner of the 2023 John M. Chambers Statistical Software Award (ACM)</span><br>
-    <span class="pub-links"><a href="https://www.jmlr.org/papers/volume22/20-1061/20-1061.pdf">Journal</a></span>
-  </li>
-  <li>
-    <span class="pub-title">Mining Optimal Policies: A Pattern Recognition Approach to Model Analysis</span><br>
-    <span class="pub-authors">with Fernanda Bravo</span><br>
-    <span class="pub-venue">INFORMS Journal on Optimization</span>, 2020<br>
-    <span class="pub-links"><a href="https://pubsonline.informs.org/doi/10.1287/ijoo.2019.0026">Journal</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3069690">SSRN</a></span>
-  </li>
-</ul>
-
-<h3>Sequential decision-making with testing</h3>
-<ul class="pubs">
-  <li>
-    <span class="pub-title">Pandora's Box Problem with Sequential Inspections</span><br>
-    <span class="pub-authors">with Ali Aouad and Jingwei Ji</span><br>
-    <span class="pub-venue">Operations Research</span>, published online<br>
-    <span class="pub-links"><a href="https://pubsonline.informs.org/doi/10.1287/opre.2024.0733">Journal</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3726167">SSRN</a></span>
-  </li>
-  <li>
-    <span class="pub-title">Scheduling with Testing of Heterogeneous Jobs</span><br>
-    <span class="pub-authors">with Retsef Levi and Tom Magnanti</span><br>
-    <span class="pub-venue">Management Science</span>, 2024<br>
-    <span class="pub-links"><a href="https://pubsonline.informs.org/doi/10.1287/mnsc.2023.4833">Journal</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3435113">SSRN</a></span>
-  </li>
-  <li>
-    <span class="pub-title">A Polynomial-Time Approximation Scheme for Sequential Batch-Testing of Series Systems</span><br>
-    <span class="pub-authors">with Danny Segev</span><br>
-    <span class="pub-venue">Operations Research</span>, 2022<br>
-    <span class="pub-links"><a href="https://pubsonline.informs.org/doi/10.1287/opre.2019.1967">Journal</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3277805">SSRN</a><a href="http://goo.gl/r6QhbK">Code</a></span>
-  </li>
-  <li>
-    <span class="pub-title">Scheduling with Testing</span><br>
-    <span class="pub-authors">with Retsef Levi and Tom Magnanti</span><br>
-    <span class="pub-venue">Management Science</span>, 2019<br>
-    <span class="pub-links"><a href="https://pubsonline.informs.org/doi/10.1287/mnsc.2017.2973">Journal</a></span>
-  </li>
-</ul>
-
-<h3>Operations</h3>
-<ul class="pubs">
-  <li>
-    <span class="pub-title">A Dual-Index Rule for Managing Temporary Congestion</span><br>
-    <span class="pub-venue">European Journal of Operational Research</span>, 2025<br>
-    <span class="pub-links"><a href="https://www.sciencedirect.com/science/article/pii/S0377221724009366">Journal</a></span>
-  </li>
-  <li>
-    <span class="pub-title">Optimal Ordering for a Probabilistic One-Time Discount</span><br>
-    <span class="pub-authors">with Yale Herer and Hussein Naseraldin</span><br>
-    <span class="pub-venue">European Journal of Operational Research</span>, 2015<br>
-    <span class="pub-links"><a href="https://doi.org/10.1016/j.ejor.2015.02.020">Journal</a></span>
-  </li>
-</ul>
+<div class="table-wrap">
+<table class="pubtable">
+  <tr><th>Year</th><th>Publication</th><th>Type</th><th>Topic</th><th>Links</th></tr>
+  <tr>
+    <td class="year">2025</td>
+    <td><span class="pub-title">Pandora's Box Problem with Sequential Inspections</span><br><span class="pub-authors">with Ali Aouad and Jingwei Ji</span><br><span class="pub-venue">Operations Research (published online)</span></td>
+    <td class="type">Methodology</td>
+    <td class="topic">Operations</td>
+    <td class="links"><a href="https://pubsonline.informs.org/doi/10.1287/opre.2024.0733">Journal</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3726167">SSRN</a></td>
+  </tr>
+  <tr>
+    <td class="year">2025</td>
+    <td><span class="pub-title">Waiting-Time Prediction with Invisible Customers</span><br><span class="pub-authors">with Yoav Kerner, Ricky Roet-Green, Arik Senderovich, and Yuting Yuan</span><br><span class="pub-venue">Manufacturing &amp; Service Operations Management</span></td>
+    <td class="type">Analytics</td>
+    <td class="topic">Operations</td>
+    <td class="links"><a href="https://pubsonline.informs.org/doi/10.1287/msom.2022.0098">Journal</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3946696">SSRN</a></td>
+  </tr>
+  <tr>
+    <td class="year">2025</td>
+    <td><span class="pub-title">A Dual-Index Rule for Managing Temporary Congestion</span><br><span class="pub-venue">European Journal of Operational Research</span></td>
+    <td class="type">Methodology</td>
+    <td class="topic">Operations</td>
+    <td class="links"><a href="https://www.sciencedirect.com/science/article/pii/S0377221724009366">Journal</a></td>
+  </tr>
+  <tr>
+    <td class="year">2024</td>
+    <td><span class="pub-title">Scheduling with Testing of Heterogeneous Jobs</span><br><span class="pub-authors">with Retsef Levi and Tom Magnanti</span><br><span class="pub-venue">Management Science</span></td>
+    <td class="type">Methodology</td>
+    <td class="topic">Operations</td>
+    <td class="links"><a href="https://pubsonline.informs.org/doi/10.1287/mnsc.2023.4833">Journal</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3435113">SSRN</a></td>
+  </tr>
+  <tr>
+    <td class="year">2024</td>
+    <td><span class="pub-title">Interpretable Prediction Rules for Congestion Risk in Intensive Care Units</span><br><span class="pub-authors">with Fernanda Bravo, Cynthia Rudin, and Yuting Yuan</span><br><span class="pub-venue">Stochastic Systems</span></td>
+    <td class="type">Analytics</td>
+    <td class="topic">Operations</td>
+    <td class="links"><a href="https://pubsonline.informs.org/doi/10.1287/stsy.2022.0018">Journal</a><a href="https://ssrn.com/abstract=3384148">SSRN</a></td>
+  </tr>
+  <tr>
+    <td class="year">2023</td>
+    <td><span class="pub-title">Visualizing the Implicit Model Selection Tradeoff</span><br><span class="pub-authors">with Zezhen (Dawn) He</span><br><span class="pub-venue">Journal of Artificial Intelligence Research</span><br><span class="pub-note">Invited for presentation at AAAI</span></td>
+    <td class="type">Analytics</td>
+    <td class="topic">Analytics</td>
+    <td class="links"><a href="https://www.jair.org/index.php/jair/article/view/13764">Journal</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3946701">SSRN</a></td>
+  </tr>
+  <tr>
+    <td class="year">2023</td>
+    <td><span class="pub-title">Globally-Consistent Rule-Based Summary-Explanations for Machine Learning Models: Application to Credit-Risk Evaluation</span><br><span class="pub-authors">with Cynthia Rudin</span><br><span class="pub-venue">Journal of Machine Learning Research</span></td>
+    <td class="type">Analytics</td>
+    <td class="topic">Analytics</td>
+    <td class="links"><a href="https://jmlr.org/papers/volume24/21-0488/21-0488.pdf">Journal</a><a href="https://drive.google.com/file/d/1vh-ANol20YpVMIqEkjMlJzSUNn0gXTWZ/view?usp=sharing">Code</a></td>
+  </tr>
+  <tr>
+    <td class="year">2022</td>
+    <td><span class="pub-title">A Polynomial-Time Approximation Scheme for Sequential Batch-Testing of Series Systems</span><br><span class="pub-authors">with Danny Segev</span><br><span class="pub-venue">Operations Research</span></td>
+    <td class="type">Methodology</td>
+    <td class="topic">Operations</td>
+    <td class="links"><a href="https://pubsonline.informs.org/doi/10.1287/opre.2019.1967">Journal</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3277805">SSRN</a><a href="http://goo.gl/r6QhbK">Code</a></td>
+  </tr>
+  <tr>
+    <td class="year">2022</td>
+    <td><span class="pub-title">A Holistic Approach to Interpretability in Financial Lending: Models, Visualizations, and Summary-Explanations</span><br><span class="pub-authors">with Chaofan Chen, Kangcheng Lin, Cynthia Rudin, Sijia Wang, and Tong Wang</span><br><span class="pub-venue">Decision Support Systems</span><br><span class="pub-note">Winner of the 2018 FICO Recognition Award for the explainable machine learning challenge</span></td>
+    <td class="type">Analytics</td>
+    <td class="topic">Analytics</td>
+    <td class="links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0167923621001573">Journal</a><a href="https://arxiv.org/abs/2106.02605">arXiv</a></td>
+  </tr>
+  <tr>
+    <td class="year">2021</td>
+    <td><span class="pub-title">Understanding How Dimension Reduction Tools Work: An Empirical Approach to Deciphering t-SNE, UMAP, TriMAP, and PaCMAP for Data Visualization</span><br><span class="pub-authors">with Haiyang Huang, Cynthia Rudin, and Yingfan Wang</span><br><span class="pub-venue">Journal of Machine Learning Research</span><br><span class="pub-note">Winner of the 2023 John M. Chambers Statistical Software Award (ACM)</span></td>
+    <td class="type">Analytics</td>
+    <td class="topic">Analytics</td>
+    <td class="links"><a href="https://www.jmlr.org/papers/volume22/20-1061/20-1061.pdf">Journal</a></td>
+  </tr>
+  <tr>
+    <td class="year">2020</td>
+    <td><span class="pub-title">Mining Optimal Policies: A Pattern Recognition Approach to Model Analysis</span><br><span class="pub-authors">with Fernanda Bravo</span><br><span class="pub-venue">INFORMS Journal on Optimization</span></td>
+    <td class="type">Analytics</td>
+    <td class="topic">Operations</td>
+    <td class="links"><a href="https://pubsonline.informs.org/doi/10.1287/ijoo.2019.0026">Journal</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3069690">SSRN</a></td>
+  </tr>
+  <tr>
+    <td class="year">2019</td>
+    <td><span class="pub-title">Scheduling with Testing</span><br><span class="pub-authors">with Retsef Levi and Tom Magnanti</span><br><span class="pub-venue">Management Science</span></td>
+    <td class="type">Methodology</td>
+    <td class="topic">Operations</td>
+    <td class="links"><a href="https://pubsonline.informs.org/doi/10.1287/mnsc.2017.2973">Journal</a></td>
+  </tr>
+  <tr>
+    <td class="year">2015</td>
+    <td><span class="pub-title">Optimal Ordering for a Probabilistic One-Time Discount</span><br><span class="pub-authors">with Yale Herer and Hussein Naseraldin</span><br><span class="pub-venue">European Journal of Operational Research</span></td>
+    <td class="type">Methodology</td>
+    <td class="topic">Operations</td>
+    <td class="links"><a href="https://doi.org/10.1016/j.ejor.2015.02.020">Journal</a></td>
+  </tr>
+</table>
+</div>
 
 <h2>Working papers</h2>
-<ul class="pubs">
-  <li>
-    <span class="pub-title">Algorithm Adoption and Explanations: An Experimental Study on Self and Other Perspectives</span><br>
-    <span class="pub-authors">with Fernanda Bravo, Zezhen (Dawn) He, and Le&oacute;n Vald&eacute;s</span> &middot; <span class="pub-note">under review</span><br>
-    <span class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5017247">SSRN</a></span>
-  </li>
-  <li>
-    <span class="pub-title">Explaining Model Behavior Across Space and Time: Differential and Intertemporal Explanations</span><br>
-    <span class="pub-authors">with Zezhen (Dawn) He</span> &middot; <span class="pub-note">under review</span><br>
-    <span class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5277675">SSRN</a><a href="https://docs.google.com/presentation/d/1NS6-3O_i6_eApHS1GFslhoq1GDEnt9hdCupT9oRoHfs/edit?usp=sharing">Slides</a></span>
-  </li>
-  <li>
-    <span class="pub-title">Dynamic Prediction of Waiting Time Intervals: Application to Cancer Care Facilities</span><br>
-    <span class="pub-authors">with Yashi Huang and Arik Senderovich</span> &middot; <span class="pub-note">under review</span>
-  </li>
-  <li>
-    <span class="pub-title">Stochastic Selection Problems with Testing</span><br>
-    <span class="pub-authors">with Chen Attias, Robert Krauthgamer, and Retsef Levi</span><br>
-    <span class="pub-links"><a href="http://ssrn.com/abstract=3076956">SSRN</a></span>
-  </li>
-</ul>
+<div class="table-wrap">
+<table class="pubtable">
+  <tr><th>Publication</th><th>Status</th><th>Type</th><th>Topic</th><th>Links</th></tr>
+  <tr>
+    <td><span class="pub-title">Algorithm Adoption and Explanations: An Experimental Study on Self and Other Perspectives</span><br><span class="pub-authors">with Fernanda Bravo, Zezhen (Dawn) He, and Le&oacute;n Vald&eacute;s</span></td>
+    <td class="year">Under review</td>
+    <td class="type">Behavioral</td>
+    <td class="topic">Analytics</td>
+    <td class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5017247">SSRN</a></td>
+  </tr>
+  <tr>
+    <td><span class="pub-title">Explaining Model Behavior Across Space and Time: Differential and Intertemporal Explanations</span><br><span class="pub-authors">with Zezhen (Dawn) He</span></td>
+    <td class="year">Under review</td>
+    <td class="type">Analytics</td>
+    <td class="topic">Analytics</td>
+    <td class="links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5277675">SSRN</a><a href="https://docs.google.com/presentation/d/1NS6-3O_i6_eApHS1GFslhoq1GDEnt9hdCupT9oRoHfs/edit?usp=sharing">Slides</a></td>
+  </tr>
+  <tr>
+    <td><span class="pub-title">Dynamic Prediction of Waiting Time Intervals: Application to Cancer Care Facilities</span><br><span class="pub-authors">with Yashi Huang and Arik Senderovich</span></td>
+    <td class="year">Under review</td>
+    <td class="type">Analytics</td>
+    <td class="topic">Operations</td>
+    <td class="links"></td>
+  </tr>
+  <tr>
+    <td><span class="pub-title">Stochastic Selection Problems with Testing</span><br><span class="pub-authors">with Chen Attias, Robert Krauthgamer, and Retsef Levi</span></td>
+    <td class="year">Working paper</td>
+    <td class="type">Methodology</td>
+    <td class="topic">Operations</td>
+    <td class="links"><a href="http://ssrn.com/abstract=3076956">SSRN</a></td>
+  </tr>
+</table>
+</div>
 
 <h2>PhD students</h2>
 <ul class="plain">
-  <li>Yuting Yuan (graduated 2022) &mdash; Assistant Professor, Smeal College of Business, Penn State University</li>
-  <li>Zezhen (Dawn) He (graduated 2025) &mdash; Postdoc, MIT</li>
-  <li>Yashi Huang (6th-year PhD student)</li>
-  <li>Le (Lexie) Sun (4th-year PhD student)</li>
-  <li>Hongyu Wang (3rd-year PhD student)</li>
-  <li>Shanshan Huang (2nd-year PhD student)</li>
+  <li><a href="https://www.yutingyuan.net/">Yuting Yuan</a> (graduated 2022) &mdash; Assistant Professor, Smeal College of Business, Penn State University</li>
+  <li><a href="https://www.zezhenhe.com/">Zezhen (Dawn) He</a> (graduated 2025) &mdash; Postdoc, MIT</li>
+  <li><a href="https://simon.rochester.edu/stories/yashi-huang">Yashi Huang</a> (6th-year PhD student)</li>
+  <li><a href="https://simon.rochester.edu/student-story/le-sun">Le (Lexie) Sun</a> (4th-year PhD student)</li>
+  <li><a href="https://simon.rochester.edu/stories/hongyu-wang">Hongyu Wang</a> (3rd-year PhD student)</li>
+  <li><a href="https://simon.rochester.edu/stories/shanshan-huang">Shanshan Huang</a> (2nd-year PhD student)</li>
 </ul>
 
 <h2>Teaching</h2>
